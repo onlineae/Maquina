@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>100 Defeitos de Máquinas de Lavar Para Consertar em Casa</title>
-  <meta name="description" content="Guia prático e ilustrado para identificar e consertar os 100 defeitos mais comuns de máquinas de lavar em casa. Por apenas R$ 19,99.">
+  <title>Ebook 100 Defeitos de Máquinas de Lavar - R$ 19,99</title>
+  <meta name="description" content="Guia prático para identificar e consertar os 100 defeitos mais comuns de máquinas de lavar em casa por apenas R$ 19,99.">
+
+  <!-- Aceleração Instantânea do Checkout da Kirvano (Preconnect + DNS-Prefetch) -->
+  <link rel="preconnect" href="https://pay.kirvano.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pay.kirvano.com">
+  <link rel="preconnect" href="https://connect.facebook.net">
 
   <!-- Meta Pixel Code -->
   <script>
@@ -24,33 +29,25 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 
-  <!-- Google Fonts: Outfit (Títulos Premium) + Inter (Leitura Limpa) -->
+  <!-- Google Fonts: Outfit (Títulos) + Inter (Texto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --primary: #0284c7;
-      --primary-dark: #0369a1;
-      --navy: #0b1320;
-      --navy-light: #1e293b;
+      --navy: #0f172a;
       --green: #10b981;
       --green-dark: #059669;
-      --accent: #f59e0b;
       --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text-main: #0f172a;
+      --card: #ffffff;
+      --text: #1e293b;
       --text-muted: #64748b;
       --border: #e2e8f0;
-      --border-light: #f1f5f9;
-      
-      /* Motion Design Easing */
       --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-      --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* Reset */
     *, *::before, *::after {
       margin: 0;
       padding: 0;
@@ -58,37 +55,33 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       background-color: var(--bg);
-      color: var(--text-main);
+      color: var(--text);
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.5;
-      overflow-x: hidden;
+      line-height: 1.55;
       font-size: 15px;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
-    h1, h2, h3, h4, .brand-logo, .price-display, .btn-action {
+    h1, h2, h3, .price, .btn-buy, .logo {
       font-family: 'Outfit', sans-serif;
     }
 
     .container {
       width: 100%;
-      max-width: 680px; /* Layout centralizado ultra focado estilo mobile-first premium */
+      max-width: 540px; /* Largura enxuta, sem blocos embolados */
       margin: 0 auto;
-      padding: 0 16px;
+      padding: 0 18px;
     }
 
     /* Top Strip */
     .top-strip {
-      background: #0b1320;
+      background: var(--navy);
       color: #e2e8f0;
       text-align: center;
-      padding: 7px 12px;
+      padding: 8px 12px;
       font-size: 0.78rem;
       font-weight: 500;
     }
@@ -97,17 +90,17 @@
     }
 
     /* Header */
-    .header-bar {
-      background: #ffffff;
+    header {
+      background: #fff;
       border-bottom: 1px solid var(--border);
       padding: 12px 0;
     }
-    .header-inner {
+    .header-wrap {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .brand-logo {
+    .logo {
       font-size: 1.05rem;
       font-weight: 800;
       color: var(--navy);
@@ -115,87 +108,83 @@
       align-items: center;
       gap: 6px;
     }
-    .brand-logo span {
+    .logo span {
       color: var(--primary);
     }
-    .secure-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
+    .secure-tag {
       font-size: 0.75rem;
-      font-weight: 600;
       color: var(--green-dark);
       background: #ecfdf5;
       padding: 4px 10px;
-      border-radius: 50px;
-      border: 1px solid #a7f3d0;
+      border-radius: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
 
-    /* Hero Section - Visual First (Headline -> Capa -> Preço/Botão) */
-    .hero-section {
+    /* Hero Principal */
+    .hero {
       background: #ffffff;
-      padding: 24px 0 28px;
+      padding: 26px 0 30px;
       border-bottom: 1px solid var(--border);
       text-align: center;
     }
 
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
+    .badge-sub {
+      display: inline-block;
       background: #f0f9ff;
       border: 1px solid #bae6fd;
-      color: var(--primary-dark);
-      font-size: 0.75rem;
+      color: #0369a1;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       padding: 4px 12px;
       border-radius: 20px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .hero-title {
-      font-size: clamp(1.45rem, 4.8vw, 1.95rem);
+    .hero h1 {
+      font-size: clamp(1.4rem, 4.8vw, 1.85rem);
       font-weight: 800;
-      line-height: 1.22;
+      line-height: 1.25;
       color: var(--navy);
       margin-bottom: 8px;
-      letter-spacing: -0.4px;
     }
 
-    .hero-title span {
+    .hero h1 span {
       color: var(--primary);
     }
 
-    .hero-subtitle {
-      font-size: 0.92rem;
+    .hero p.desc {
+      font-size: 0.9rem;
       color: var(--text-muted);
-      max-width: 520px;
+      max-width: 460px;
       margin: 0 auto 20px;
       line-height: 1.45;
     }
 
-    /* Cover Wrapper Centralizada com Ambient Float suave */
-    .cover-container {
+    /* Capa Centralizada */
+    .cover-wrap {
       display: flex;
       justify-content: center;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .cover-card {
-      max-width: 250px;
+      max-width: 230px;
       width: 100%;
-      border-radius: 14px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 16px 35px rgba(2, 132, 199, 0.2), 0 4px 12px rgba(0, 0, 0, 0.06);
-      border: 1.5px solid #bae6fd;
+      box-shadow: 0 12px 28px rgba(2, 132, 199, 0.16);
+      border: 1px solid #cbd5e1;
       animation: floatSmooth 4.5s ease-in-out infinite alternate;
     }
 
     @keyframes floatSmooth {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-6px); }
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
     }
 
     .cover-card img {
@@ -204,18 +193,18 @@
       display: block;
     }
 
-    /* Bloco Direto Abaixo da Capa: Preço + CTA */
-    .action-box {
+    /* Bloco de Preço & Compra Imediata */
+    .buy-box {
       background: #f8fafc;
       border: 1.5px solid #0284c7;
-      border-radius: 14px;
-      padding: 18px 20px;
-      max-width: 440px;
+      border-radius: 12px;
+      padding: 18px;
+      max-width: 400px;
       margin: 0 auto;
-      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.08);
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.06);
     }
 
-    .price-row {
+    .price-wrap {
       display: flex;
       align-items: baseline;
       justify-content: center;
@@ -223,36 +212,36 @@
       margin-bottom: 10px;
     }
 
-    .old-price {
-      font-size: 0.95rem;
+    .price-old {
+      font-size: 0.92rem;
       color: #94a3b8;
       text-decoration: line-through;
     }
 
-    .current-price {
-      font-size: 2.4rem;
+    .price {
+      font-size: 2.3rem;
       font-weight: 900;
       color: var(--navy);
       line-height: 1;
     }
 
-    .current-price span {
+    .price span {
       font-size: 1.15rem;
-      font-weight: 700;
       color: var(--green-dark);
+      font-weight: 700;
     }
 
-    .badge-pix {
+    .pix-pill {
       background: #ecfdf5;
       color: #047857;
       font-size: 0.72rem;
       font-weight: 700;
       padding: 3px 8px;
-      border-radius: 5px;
+      border-radius: 4px;
     }
 
-    /* Botão Verde com Efeito Sheen Suave */
-    .btn-action {
+    /* Botão Verde de Compra com Abertura Instantânea */
+    .btn-buy {
       display: block;
       width: 100%;
       background: linear-gradient(135deg, #10b981 0%, #059669 100%);
@@ -261,43 +250,36 @@
       font-size: 1.05rem;
       font-weight: 800;
       padding: 15px 18px;
-      border-radius: 10px;
+      border-radius: 8px;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 0.3px;
-      box-shadow: 0 6px 18px rgba(16, 185, 129, 0.32);
-      border: none;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
       cursor: pointer;
       position: relative;
       overflow: hidden;
-      transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
-    .btn-action:hover {
+    .btn-buy:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 22px rgba(16, 185, 129, 0.42);
-      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
     }
 
-    .btn-action:active {
+    .btn-buy:active {
       transform: scale(0.97);
     }
 
-    .btn-action::after {
+    .btn-buy::after {
       content: '';
       position: absolute;
       top: -50%;
       left: -60%;
       width: 40%;
       height: 200%;
-      background: linear-gradient(
-        60deg, 
-        rgba(255, 255, 255, 0) 0%, 
-        rgba(255, 255, 255, 0.35) 50%, 
-        rgba(255, 255, 255, 0) 100%
-      );
+      background: linear-gradient(60deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
       transform: rotate(25deg);
-      animation: sheenSweep 3.8s infinite var(--ease-smooth);
+      animation: sheenSweep 4s infinite ease-in-out;
     }
 
     @keyframes sheenSweep {
@@ -305,403 +287,294 @@
       30%, 100% { left: 140%; }
     }
 
-    .btn-action small {
+    .btn-buy small {
       display: block;
       font-family: 'Inter', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 500;
+      font-size: 0.74rem;
+      font-weight: 400;
       text-transform: none;
       opacity: 0.92;
       margin-top: 3px;
     }
 
-    .micro-trust-row {
+    .trust-badges {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 14px;
       font-size: 0.74rem;
-      color: #64748b;
+      color: var(--text-muted);
       margin-top: 10px;
       font-weight: 600;
-      flex-wrap: wrap;
     }
 
-    /* Brands Section */
-    .brands-bar {
+    /* Marcas */
+    .brands {
       background: #f1f5f9;
       border-bottom: 1px solid var(--border);
       padding: 10px 16px;
       text-align: center;
       font-size: 0.78rem;
       color: #475569;
-      font-weight: 500;
     }
-    .brands-bar strong {
+    .brands strong {
       color: var(--navy);
-      font-weight: 700;
     }
 
-    /* Section Styles */
+    /* Seções Arejadas */
     section {
-      padding: 34px 0;
+      padding: 30px 0;
     }
 
-    .section-header {
+    .sec-head {
       text-align: center;
-      margin-bottom: 20px;
-    }
-    .section-header h2 {
-      font-size: clamp(1.25rem, 4vw, 1.55rem);
-      font-weight: 800;
-      color: var(--navy);
-      margin-bottom: 4px;
-      letter-spacing: -0.3px;
-    }
-    .section-header p {
-      font-size: 0.86rem;
-      color: var(--text-muted);
-    }
-
-    /* 6 Defeitos Rápidos (Cards Minimalistas) */
-    .symptoms-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
       margin-bottom: 18px;
     }
 
-    @media (min-width: 500px) {
-      .symptoms-list {
-        grid-template-columns: 1fr 1fr;
-      }
+    .sec-head h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 4px;
     }
 
-    .symptom-item {
+    .sec-head p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Lista Limpa de Benefícios */
+    .clean-list {
       background: #ffffff;
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px 14px;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .clean-item {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: border-color 0.2s var(--ease-out), transform 0.2s var(--ease-out);
+      align-items: flex-start;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid #f1f5f9;
     }
 
-    .symptom-item:hover {
-      border-color: #38bdf8;
-      transform: translateY(-2px);
+    .clean-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
-    .symptom-emoji {
-      font-size: 1.3rem;
+    .clean-item:first-child {
+      padding-top: 0;
+    }
+
+    .item-icon {
+      font-size: 1.2rem;
       line-height: 1;
+      margin-top: 2px;
     }
 
-    .symptom-text h3 {
+    .item-text h3 {
       font-size: 0.9rem;
       font-weight: 700;
       color: var(--navy);
       margin-bottom: 1px;
     }
 
-    .symptom-text p {
-      font-size: 0.78rem;
+    .item-text p {
+      font-size: 0.8rem;
       color: var(--text-muted);
       line-height: 1.35;
     }
 
-    /* Reality Notice Box */
-    .reality-box {
+    /* Reality Box */
+    .fact-box {
       background: #eff6ff;
       border: 1px solid #bfdbfe;
       border-radius: 10px;
-      padding: 14px 16px;
-      font-size: 0.84rem;
+      padding: 12px 14px;
+      font-size: 0.82rem;
       color: #1e40af;
-      line-height: 1.45;
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
-    .reality-box strong {
-      color: #1d4ed8;
-    }
-
-    /* Dual Audience Box (Men & Women) */
-    .audience-section {
-      background: #ffffff;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .audience-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-
-    @media (min-width: 540px) {
-      .audience-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .aud-box {
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
-    }
-
-    .aud-box.female {
-      border-top: 3px solid #ec4899;
-    }
-
-    .aud-box.male {
-      border-top: 3px solid #0284c7;
-    }
-
-    .aud-box h3 {
-      font-size: 0.98rem;
-      font-weight: 800;
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-
-    .aud-box ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .aud-box ul li {
-      font-size: 0.82rem;
-      color: #334155;
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
       line-height: 1.4;
-    }
-
-    .aud-box ul li span {
-      color: var(--primary);
-      font-weight: 700;
-    }
-
-    /* Reviews Section */
-    .reviews-container {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
       gap: 10px;
-    }
-
-    @media (min-width: 580px) {
-      .reviews-container {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .rev-card {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .rev-stars {
-      color: #f59e0b;
-      font-size: 0.88rem;
-      margin-bottom: 6px;
-    }
-
-    .rev-card p {
-      font-size: 0.82rem;
-      color: #334155;
-      line-height: 1.45;
-      font-style: italic;
-      margin-bottom: 10px;
-    }
-
-    .rev-user {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--navy);
-      display: flex;
-      justify-content: space-between;
       align-items: center;
     }
 
-    .rev-tag {
+    /* Para Homens e Mulheres (Super Limpo) */
+    .dual-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    @media (max-width: 480px) {
+      .dual-box {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
+    .dual-col h3 {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dual-col p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Prova Social Simples */
+    .review-mini {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 0.82rem;
+      margin-bottom: 3px;
+    }
+
+    .review-mini p {
+      font-size: 0.82rem;
+      color: #334155;
+      font-style: italic;
+      line-height: 1.38;
+      margin-bottom: 4px;
+    }
+
+    .review-author {
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--navy);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .verified {
       color: var(--green-dark);
-      background: #ecfdf5;
-      padding: 1px 5px;
-      border-radius: 4px;
-      font-size: 0.68rem;
+      font-weight: 600;
     }
 
-    /* Final Offer Box */
-    .final-offer-card {
-      background: #0b1320;
+    /* Caixa de Oferta Final */
+    .final-card {
+      background: var(--navy);
       color: #ffffff;
-      border-radius: 16px;
-      padding: 26px 18px;
+      border-radius: 14px;
+      padding: 24px 18px;
       text-align: center;
-      box-shadow: 0 15px 35px rgba(11, 19, 32, 0.25);
-      margin: 10px auto;
+      margin-top: 10px;
     }
 
-    .final-offer-card h2 {
-      font-size: clamp(1.3rem, 4vw, 1.65rem);
+    .final-card h2 {
+      font-size: 1.45rem;
       font-weight: 800;
       color: #fff;
       margin-bottom: 4px;
     }
 
-    .final-offer-card .offer-sub {
+    .final-card .sub {
       color: #94a3b8;
-      font-size: 0.84rem;
-      margin-bottom: 16px;
+      font-size: 0.82rem;
+      margin-bottom: 14px;
     }
 
-    .offer-checklist {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 10px;
-      padding: 12px 16px;
+    .final-bullets {
       text-align: left;
-      margin-bottom: 16px;
+      max-width: 360px;
+      margin: 0 auto 16px;
       list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 0.82rem;
+      color: #f1f5f9;
+    }
+
+    .final-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .final-bullets li span {
+      color: #38bdf8;
+      font-weight: 800;
+    }
+
+    /* Garantia */
+    .guarantee-note {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-top: 16px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: left;
+    }
+    .guarantee-note strong {
+      color: var(--navy);
+    }
+
+    /* FAQ Limpo */
+    .faq-list {
       display: flex;
       flex-direction: column;
       gap: 6px;
     }
 
-    .offer-checklist li {
-      font-size: 0.84rem;
-      color: #f1f5f9;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .offer-checklist li strong {
-      color: #38bdf8;
-    }
-
-    .final-price-area {
-      margin-bottom: 14px;
-    }
-
-    .fp-old {
-      font-size: 0.92rem;
-      color: #94a3b8;
-      text-decoration: line-through;
-    }
-
-    .fp-now {
-      font-size: clamp(2.4rem, 7vw, 3rem);
-      font-weight: 900;
-      color: #38bdf8;
-      line-height: 1;
-      margin: 2px 0;
-    }
-
-    .fp-now span {
-      font-size: 1.3rem;
-    }
-
-    .fp-note {
-      font-size: 0.78rem;
-      color: #a7f3d0;
-      font-weight: 600;
-    }
-
-    /* Guarantee Row */
-    .guarantee-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px 16px;
-      margin-top: 16px;
-      text-align: left;
-    }
-
-    .guarantee-row .g-icon {
-      font-size: 1.8rem;
-      flex-shrink: 0;
-    }
-
-    .guarantee-row h4 {
-      font-size: 0.9rem;
-      font-weight: 800;
-      color: var(--navy);
-      margin-bottom: 2px;
-    }
-
-    .guarantee-row p {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      line-height: 1.35;
-    }
-
-    /* FAQ (Super Enxuto & Rápido) */
-    .faq-container {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .faq-card {
+    .faq-item {
       background: #ffffff;
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 12px 14px;
+      padding: 11px 13px;
       cursor: pointer;
-      transition: border-color 0.2s var(--ease-out);
     }
 
-    .faq-card:hover {
-      border-color: #38bdf8;
-    }
-
-    .faq-question {
+    .faq-q {
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-family: 'Outfit', sans-serif;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--navy);
     }
 
-    .faq-icon {
-      color: var(--primary);
-      font-size: 1rem;
-      transition: transform 0.2s var(--ease-out);
-    }
-
-    .faq-answer {
+    .faq-a {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.25s var(--ease-out), padding-top 0.2s;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
-      line-height: 1.4;
+      line-height: 1.38;
     }
 
-    .faq-card.active .faq-answer {
-      max-height: 140px;
-      padding-top: 6px;
+    .faq-item.active .faq-a {
+      max-height: 120px;
+      padding-top: 5px;
     }
 
-    .faq-card.active .faq-icon {
+    .faq-item.active .faq-q span:last-child {
       transform: rotate(45deg);
     }
 
@@ -709,14 +582,14 @@
     footer {
       background: #ffffff;
       border-top: 1px solid var(--border);
-      padding: 22px 0 80px;
+      padding: 20px 0 75px;
       text-align: center;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: #94a3b8;
     }
 
-    /* Mobile Sticky Bar */
-    .mobile-sticky {
+    /* Barra Fixa Mobile */
+    .mobile-bar {
       position: fixed;
       bottom: 0;
       left: 0;
@@ -725,56 +598,51 @@
       border-top: 1px solid var(--border);
       padding: 9px 14px;
       z-index: 9999;
-      box-shadow: 0 -3px 14px rgba(0,0,0,0.07);
+      box-shadow: 0 -3px 12px rgba(0,0,0,0.06);
       display: none;
     }
 
-    .mobile-sticky-inner {
+    .mobile-bar-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      max-width: 440px;
+      gap: 12px;
+      max-width: 420px;
       margin: 0 auto;
     }
 
-    .ms-price {
+    .mb-price {
       line-height: 1.1;
     }
-    .ms-price small {
+    .mb-price small {
       font-size: 0.68rem;
       color: var(--text-muted);
       display: block;
-      font-weight: 500;
     }
-    .ms-price strong {
+    .mb-price strong {
       font-family: 'Outfit', sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: 900;
       color: var(--navy);
     }
 
-    .ms-btn {
+    .mb-btn {
       flex: 1;
       background: linear-gradient(135deg, #10b981, #059669);
-      color: #ffffff;
+      color: #fff;
       font-family: 'Outfit', sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       font-weight: 800;
       padding: 11px 14px;
       text-align: center;
       border-radius: 8px;
       text-decoration: none;
       text-transform: uppercase;
-      box-shadow: 0 4px 10px rgba(16, 185, 129, 0.32);
-    }
-
-    .ms-btn:active {
-      transform: scale(0.97);
+      box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
     }
 
     @media (max-width: 767px) {
-      .mobile-sticky {
+      .mobile-bar {
         display: block;
       }
     }
@@ -782,9 +650,8 @@
     /* Motion Scroll Reveal */
     .reveal {
       opacity: 0;
-      transform: translateY(14px);
-      transition: opacity 0.45s var(--ease-out), transform 0.45s var(--ease-out);
-      will-change: opacity, transform;
+      transform: translateY(10px);
+      transition: opacity 0.35s var(--ease-out), transform 0.35s var(--ease-out);
     }
 
     .reveal.visible {
@@ -793,17 +660,9 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .cover-card {
-        animation: none !important;
-      }
-      .btn-action::after {
-        animation: none !important;
-      }
-      .reveal {
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important;
-      }
+      .cover-card { animation: none !important; }
+      .btn-buy::after { animation: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
     }
   </style>
 </head>
@@ -815,64 +674,62 @@
   </div>
 
   <!-- Header -->
-  <header class="header-bar">
+  <header>
     <div class="container">
-      <div class="header-inner">
-        <div class="brand-logo">
+      <div class="header-wrap">
+        <div class="logo">
           🔧 Guia<span>Reparos</span>
         </div>
-        <div class="secure-pill">
+        <div class="secure-tag">
           🔒 Compra Segura
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section: Headline Enxuta -> Capa Centralizada -> Preço & Botão Logo Abaixo -->
-  <section class="hero-section">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
       
-      <div class="hero-badge">
-        Guia Prático Passo a Passo
-      </div>
+      <div class="badge-sub">Guia Prático Passo a Passo</div>
 
-      <h1 class="hero-title">
+      <h1>
         Sua Máquina de Lavar Parou? <br>
         <span>Conserte em Casa em Minutos</span>
       </h1>
 
-      <p class="hero-subtitle">
-        Identifique o problema pelo sintoma e resolva os 100 defeitos mais comuns sem ferramentas caras e sem pagar visitas de R$ 200 para técnicos.
+      <p class="desc">
+        Identifique o defeito pelo sintoma e resolva os 100 problemas mais comuns sem ferramentas caras e sem pagar visitas de R$ 200 para técnicos.
       </p>
 
-      <!-- 1. A Capa em Destaque Central -->
-      <div class="cover-container">
+      <!-- Capa Centralizada -->
+      <div class="cover-wrap">
         <div class="cover-card">
-          <img src="capa-ebook.jpg" alt="Ebook 100 Defeitos de Máquinas de Lavar Para Consertar em Casa" width="250" height="375" loading="eager">
+          <img src="capa-ebook.jpg" alt="100 Defeitos de Máquinas de Lavar Para Consertar em Casa" width="230" height="345" loading="eager">
         </div>
       </div>
 
-      <!-- 2. Bloco com o Preço e Botão Logo Abaixo da Capa -->
-      <div class="action-box">
-        <div class="price-row">
-          <span class="old-price">De R$ 97,00</span>
-          <div class="current-price">
+      <!-- Caixa Direta de Compra -->
+      <div class="buy-box">
+        <div class="price-wrap">
+          <span class="price-old">De R$ 97,00</span>
+          <div class="price">
             <span>R$</span> 19,99
           </div>
-          <span class="badge-pix">PIX ou Cartão</span>
+          <span class="pix-pill">PIX ou Cartão</span>
         </div>
 
         <a href="https://pay.kirvano.com/44469894-c208-48c3-9b32-f4ab41a3edb9" 
-           class="btn-action"
-           onclick="if(window.fbq){fbq('track', 'InitiateCheckout');}">
+           class="btn-buy"
+           onclick="handleCheckout(event, this.href)">
           QUERO O GUIA AGORA POR R$ 19,99
-          <small>👉 Liberação imediata no seu e-mail e WhatsApp</small>
+          <small>👉 Liberação imediata após o pagamento</small>
         </a>
 
-        <div class="micro-trust-row">
-          <span>⚡ Download Imediato</span>
-          <span>🛡️ Garantia de 7 Dias</span>
-          <span>📱 Acesso no Celular</span>
+        <div class="trust-badges">
+          <span>⚡ Acesso Imediato</span>
+          <span>🛡️ 7 Dias de Garantia</span>
+          <span>📱 Leitura no Celular</span>
         </div>
       </div>
 
@@ -880,146 +737,116 @@
   </section>
 
   <!-- Marcas Compatíveis -->
-  <div class="brands-bar">
+  <div class="brands">
     <div class="container">
       Compatível com: <strong>Brastemp • Electrolux • Consul • Samsung • LG • Panasonic • Colormaq</strong>
     </div>
   </div>
 
-  <!-- O Que Você Vai Resolver (Sintomas Rápidos) -->
+  <!-- O Que Você Vai Aprender (Lista Clean) -->
   <section class="reveal">
     <div class="container">
-      <div class="section-header">
+      <div class="sec-head">
         <h2>O Que Você Vai Resolver Sozinho?</h2>
-        <p>Basta abrir o guia no celular e seguir a solução ilustrada:</p>
+        <p>Basta abrir o guia no celular e seguir a solução simples:</p>
       </div>
 
-      <div class="symptoms-list">
-        <div class="symptom-item">
-          <div class="symptom-emoji">🔌</div>
-          <div class="symptom-text">
+      <div class="clean-list">
+        <div class="clean-item">
+          <div class="item-icon">🔌</div>
+          <div class="item-text">
             <h3>Máquina Não Liga</h3>
-            <p>Fusível térmico, botão travado ou placa com oxidação.</p>
+            <p>Fusível térmico, placa com mau contato, tomada ou botão travado.</p>
           </div>
         </div>
 
-        <div class="symptom-item">
-          <div class="symptom-emoji">🌀</div>
-          <div class="symptom-text">
-            <h3>Não Centrifuga</h3>
-            <p>Trava de tampa, correia frouxa ou capacitor de R$ 15.</p>
+        <div class="clean-item">
+          <div class="item-icon">🌀</div>
+          <div class="item-text">
+            <h3>Não Centrifuga ou Não Bate</h3>
+            <p>Trava de segurança da tampa, correia frouxa ou capacitor de partida.</p>
           </div>
         </div>
 
-        <div class="symptom-item">
-          <div class="symptom-emoji">🌊</div>
-          <div class="symptom-text">
-            <h3>Não Joga Água Fora</h3>
-            <p>Moeda ou grampo travando a bomba de drenagem.</p>
+        <div class="clean-item">
+          <div class="item-icon">🌊</div>
+          <div class="item-text">
+            <h3>Água Parada / Não Esvazia</h3>
+            <p>Como desentupir e destravar a bomba de drenagem presa por moedas ou grampos.</p>
           </div>
         </div>
 
-        <div class="symptom-item">
-          <div class="symptom-emoji">💧</div>
-          <div class="symptom-text">
-            <h3>Vaza Água por Baixo</h3>
-            <p>Mangueiras soltas, gaxeta ressecada ou vedação.</p>
+        <div class="clean-item">
+          <div class="item-icon">💧</div>
+          <div class="item-text">
+            <h3>Vazamento de Água</h3>
+            <p>Como localizar mangueiras furadas, conexões soltas ou gaxetas ressecadas.</p>
           </div>
         </div>
 
-        <div class="symptom-item">
-          <div class="symptom-emoji">🔊</div>
-          <div class="symptom-text">
-            <h3>Barulho Alto / Máquina Pula</h3>
-            <p>Tirantes desencaixados e pés desnivelados.</p>
-          </div>
-        </div>
-
-        <div class="symptom-item">
-          <div class="symptom-emoji">⚠️</div>
-          <div class="symptom-text">
+        <div class="clean-item">
+          <div class="item-icon">⚠️</div>
+          <div class="item-text">
             <h3>Códigos de Erro no Painel</h3>
-            <p>O significado exato das luzes ou letras piscando.</p>
+            <p>Tabela prática para decifrar as letras e luzes que piscam no visor.</p>
           </div>
         </div>
       </div>
 
-      <div class="reality-box">
-        <span style="font-size: 1.3rem;">💡</span>
+      <div class="fact-box">
+        <span style="font-size: 1.25rem;">💡</span>
         <div>
-          Mais de <strong>80% dos problemas</strong> são resolvidos com uma simples limpeza, aperto de mangueira ou troca de peça de menos de R$ 20. <strong>Você não precisa pagar R$ 300 para um técnico!</strong>
+          Mais de <strong>80% dos defeitos</strong> são resolvidos com uma simples limpeza de filtro, reencaixe de mangueira ou troca de peça barata. Não pague R$ 300 à toa!
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Feito Para Mulheres e Homens -->
-  <section class="audience-section reveal">
+  <!-- Feito Para Homens e Mulheres -->
+  <section class="reveal" style="padding-top: 5px;">
     <div class="container">
-      <div class="section-header">
+      <div class="sec-head">
         <h2>Feito Para Homens e Mulheres</h2>
-        <p>Linguagem 100% prática, sem termos difíceis de engenharia:</p>
+        <p>Linguagem popular e ilustrada para qualquer pessoa da casa:</p>
       </div>
 
-      <div class="audience-grid">
-        <div class="aud-box female">
+      <div class="dual-box">
+        <div class="dual-col">
           <h3>👩 Para as Mulheres</h3>
-          <ul>
-            <li><span>✓</span> <strong>Autonomia:</strong> resolva os problemas da lavanderia na hora.</li>
-            <li><span>✓</span> <strong>Segurança:</strong> saiba o defeito real e evite orçamentos abusivos.</li>
-            <li><span>✓</span> <strong>Passo a passo com fotos:</strong> fácil de entender e executar.</li>
-          </ul>
+          <p>Autonomia para resolver a lavanderia sem depender de ninguém e a segurança de nunca mais ser passada para trás por orçamentos abusivos.</p>
         </div>
 
-        <div class="aud-box male">
+        <div class="dual-col">
           <h3>👨 Para os Homens</h3>
-          <ul>
-            <li><span>✓</span> <strong>Praticidade (DIY):</strong> conserte em casa com ferramentas normais.</li>
-            <li><span>✓</span> <strong>Economia imediata:</strong> economize de R$ 150 a R$ 400 por conserto.</li>
-            <li><span>✓</span> <strong>Diagnóstico direto:</strong> teste componentes sem enrolação.</li>
-          </ul>
+          <p>Praticidade no estilo faça você mesmo (DIY), consertando rápido com ferramentas simples de casa e economizando muito no orçamento familiar.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Depoimentos Rápidos -->
+  <!-- Depoimentos Curtos -->
   <section class="reveal">
     <div class="container">
-      <div class="section-header">
+      <div class="sec-head">
         <h2>Quem Já Economizou</h2>
-        <p>Depoimentos reais de quem consertou em casa:</p>
+        <p>Resultados reais de quem resolveu o problema em casa:</p>
       </div>
 
-      <div class="reviews-container">
-        <div class="rev-card">
-          <div>
-            <div class="rev-stars">★★★★★</div>
-            <p>"O técnico cobrou R$ 380 dizendo que era motor. No ebook vi que era só o capacitor de R$ 16. Troquei e voltou a centrifugar na hora!"</p>
-          </div>
-          <div class="rev-user">
-            Carlos E. <span class="rev-tag">✓ Verificado</span>
-          </div>
+      <div class="review-mini">
+        <div class="review-stars">★★★★★</div>
+        <p>"O técnico cobrou R$ 380 dizendo que era motor. No ebook vi que era só o capacitor de R$ 16. Troquei e voltou a centrifugar na hora!"</p>
+        <div class="review-author">
+          <span>Carlos E.</span>
+          <span class="verified">✓ Compra Verificada</span>
         </div>
+      </div>
 
-        <div class="rev-card">
-          <div>
-            <div class="rev-stars">★★★★★</div>
-            <p>"Moro sozinha e minha máquina transbordava água. Olhei no livro e era só a mangueirinha solta. Encaixei e pronto. Valeu demais!"</p>
-          </div>
-          <div class="rev-user">
-            Mariana V. <span class="rev-tag">✓ Verificada</span>
-          </div>
-        </div>
-
-        <div class="rev-card">
-          <div>
-            <div class="rev-stars">★★★★★</div>
-            <p>"Muito didático e direto. Já consertei a minha e a da minha mãe. Todo mundo deveria ter esse guia salvo no celular."</p>
-          </div>
-          <div class="rev-user">
-            Rodrigo S. <span class="rev-tag">✓ Verificado</span>
-          </div>
+      <div class="review-mini">
+        <div class="review-stars">★★★★★</div>
+        <p>"Moro sozinha e minha máquina estava transbordando água. Olhei no livro e era só a mangueirinha solta. Encaixei e pronto. Valeu cada centavo!"</p>
+        <div class="review-author">
+          <span>Mariana V.</span>
+          <span class="verified">✓ Compra Verificada</span>
         </div>
       </div>
     </div>
@@ -1027,89 +854,77 @@
 
   <!-- Oferta Final -->
   <div class="container reveal">
-    <div class="final-offer-card">
+    <div class="final-card">
       <h2>Acesso Completo Por R$ 19,99</h2>
-      <p class="offer-sub">Tudo o que você precisa para consertar sua máquina hoje:</p>
+      <p class="sub">Tudo o que você precisa para consertar sua máquina hoje:</p>
 
-      <ul class="offer-checklist">
-        <li>✓ <strong>Ebook Completo 100 Defeitos</strong> (Passo a passo com fotos)</li>
-        <li>✓ <strong>BÔNUS 1:</strong> Guia de Códigos de Erro (Brastemp, Consul, Samsung, LG)</li>
-        <li>✓ <strong>BÔNUS 2:</strong> Manual de Higienização para Evitar Mofo e Mau Cheiro</li>
-        <li>✓ <strong>BÔNUS 3:</strong> Checklist de 5 Minutos antes de Chamar Técnico</li>
-        <li>✓ Acesso vitalício no celular, tablet ou computador</li>
+      <ul class="final-bullets">
+        <li><span>✓</span> Ebook Completo 100 Defeitos com fotos</li>
+        <li><span>✓</span> Bônus com a Tabela de Códigos de Erro</li>
+        <li><span>✓</span> Guia de Manutenção Preventiva e Higienização</li>
+        <li><span>✓</span> Acesso vitalício para ler no celular</li>
       </ul>
 
-      <div class="final-price-area">
-        <div class="fp-old">De R$ 97,00</div>
-        <div class="fp-now">
-          <span>R$</span> 19,99
+      <div style="margin-bottom: 14px;">
+        <div class="price" style="color: #38bdf8;">
+          <span style="color: #cbd5e1; font-size: 1.1rem; text-decoration: line-through; margin-right: 6px;">R$ 97</span>
+          R$ 19,99
         </div>
-        <div class="fp-note">Pagamento único no PIX ou Cartão • Sem mensalidades</div>
+        <div style="font-size: 0.78rem; color: #a7f3d0; margin-top: 2px;">Pagamento único • Sem mensalidades</div>
       </div>
 
       <a href="https://pay.kirvano.com/44469894-c208-48c3-9b32-f4ab41a3edb9" 
-         class="btn-action"
+         class="btn-buy"
          style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);"
-         onclick="if(window.fbq){fbq('track', 'InitiateCheckout');}">
+         onclick="handleCheckout(event, this.href)">
         QUERO CONSERTAR MINHA MÁQUINA AGORA
-        <small>👉 Clique aqui para receber o material imediatamente</small>
+        <small>👉 Liberação imediata após o pagamento</small>
       </a>
 
-      <div class="guarantee-row">
-        <div class="g-icon">🛡️</div>
+      <div class="guarantee-note">
+        <span style="font-size: 1.5rem;">🛡️</span>
         <div>
-          <h4>Garantia Total de 7 Dias</h4>
-          <p>Se você abrir o guia e achar que ele não te ajudou, devolvemos 100% do seu dinheiro. Sem perguntas!</p>
+          <strong>Garantia Total de 7 Dias:</strong> Se você achar que o guia não te ajudou, nós devolvemos 100% do seu dinheiro. Sem perguntas!
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Dúvidas Frequentes -->
+  <!-- FAQ Curto -->
   <section class="reveal" style="padding-top: 15px;">
     <div class="container">
-      <div class="section-header">
+      <div class="sec-head">
         <h2>Dúvidas Frequentes</h2>
       </div>
 
-      <div class="faq-container">
-        <div class="faq-card" onclick="this.classList.toggle('active')">
-          <div class="faq-question">
-            <span>Preciso entender de elétrica ou ter ferramentas caras?</span>
-            <span class="faq-icon">+</span>
+      <div class="faq-list">
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-q">
+            <span>Preciso de ferramentas profissionais?</span>
+            <span style="color: var(--primary);">+</span>
           </div>
-          <div class="faq-answer">
-            Não! A maioria dos defeitos é resolvida com chaves simples (como fenda ou philips) que qualquer casa tem. O guia foi feito para pessoas leigas.
-          </div>
-        </div>
-
-        <div class="faq-card" onclick="this.classList.toggle('active')">
-          <div class="faq-question">
-            <span>Serve para o modelo da minha máquina?</span>
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            Sim! Os 100 defeitos abordados se repetem em todas as principais marcas (Brastemp, Consul, Electrolux, Samsung, LG, etc.).
+          <div class="faq-a">
+            Não! A maioria dos defeitos é resolvida com chaves simples (como fenda ou philips) que qualquer casa tem.
           </div>
         </div>
 
-        <div class="faq-card" onclick="this.classList.toggle('active')">
-          <div class="faq-question">
-            <span>Como vou receber o acesso?</span>
-            <span class="faq-icon">+</span>
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-q">
+            <span>Serve para a marca da minha máquina?</span>
+            <span style="color: var(--primary);">+</span>
           </div>
-          <div class="faq-answer">
-            O envio é 100% automático e imediato. Assim que o pagamento de R$ 19,99 for confirmado na Kirvano, você recebe o link de download no seu e-mail e no seu WhatsApp.
+          <div class="faq-a">
+            Sim! Abrange os 100 defeitos que se repetem em todas as principais marcas (Brastemp, Consul, Electrolux, Samsung, LG, etc.).
           </div>
         </div>
 
-        <div class="faq-card" onclick="this.classList.toggle('active')">
-          <div class="faq-question">
-            <span>Posso abrir no celular?</span>
-            <span class="faq-icon">+</span>
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-q">
+            <span>Como vou receber o material?</span>
+            <span style="color: var(--primary);">+</span>
           </div>
-          <div class="faq-answer">
-            Sim! O arquivo é um PDF de leitura rápida, perfeito para abrir no celular ao lado da máquina.
+          <div class="faq-a">
+            O envio é automático e imediato. Assim que o pagamento de R$ 19,99 for confirmado, você recebe o acesso diretamente no seu e-mail cadastrado.
           </div>
         </div>
       </div>
@@ -1124,23 +939,34 @@
     </div>
   </footer>
 
-  <!-- Mobile Sticky Bar -->
-  <div class="mobile-sticky">
-    <div class="mobile-sticky-inner">
-      <div class="ms-price">
+  <!-- Barra Fixa Mobile -->
+  <div class="mobile-bar">
+    <div class="mobile-bar-inner">
+      <div class="mb-price">
         <small>Por apenas</small>
         <strong>R$ 19,99</strong>
       </div>
       <a href="https://pay.kirvano.com/44469894-c208-48c3-9b32-f4ab41a3edb9" 
-         class="ms-btn"
-         onclick="if(window.fbq){fbq('track', 'InitiateCheckout');}">
+         class="mb-btn"
+         onclick="handleCheckout(event, this.href)">
         COMPRAR AGORA 👉
       </a>
     </div>
   </div>
 
-  <!-- Scroll Reveal Script -->
+  <!-- Scripts Otimizados (Checkout Rápido + Scroll Reveal) -->
   <script>
+    // Função para abrir o checkout instantaneamente sem travar no pixel
+    function handleCheckout(event, url) {
+      if (window.fbq) {
+        try {
+          fbq('track', 'InitiateCheckout');
+        } catch(e) {}
+      }
+      // Garante redirecionamento imediato sem delays
+      window.location.href = url;
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
       const reveals = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
@@ -1152,8 +978,8 @@
             }
           });
         }, {
-          threshold: 0.1,
-          rootMargin: '0px 0px -30px 0px'
+          threshold: 0.08,
+          rootMargin: '0px 0px -20px 0px'
         });
 
         reveals.forEach(el => observer.observe(el));
